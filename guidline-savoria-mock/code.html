@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-on-surface": "#313030",
+                        "surface-tint": "#e9c176",
+                        "surface-bright": "#393939",
+                        "on-primary-fixed-variant": "#5d4201",
+                        "tertiary": "#d1c5b2",
+                        "primary-fixed": "#ffdea5",
+                        "error": "#ffb4ab",
+                        "surface-container-highest": "#353534",
+                        "outline": "#9a8f80",
+                        "tertiary-container": "#afa492",
+                        "secondary-container": "#474747",
+                        "on-secondary": "#303030",
+                        "on-primary-fixed": "#261900",
+                        "surface-container-high": "#2a2a2a",
+                        "primary": "#e9c176",
+                        "surface-dim": "#131313",
+                        "surface-container-low": "#1c1b1b",
+                        "error-container": "#93000a",
+                        "surface-container": "#201f1f",
+                        "on-tertiary-fixed-variant": "#4d4637",
+                        "on-tertiary-fixed": "#211b0f",
+                        "on-primary-container": "#4e3700",
+                        "inverse-primary": "#775a19",
+                        "outline-variant": "#4e4639",
+                        "tertiary-fixed": "#ede1cd",
+                        "on-background": "#e5e2e1",
+                        "on-surface": "#e5e2e1",
+                        "on-secondary-fixed": "#1b1c1c",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "on-primary": "#412d00",
+                        "on-secondary-fixed-variant": "#474747",
+                        "on-secondary-container": "#b6b5b4",
+                        "primary-container": "#c5a059",
+                        "surface-variant": "#353534",
+                        "secondary": "#c8c6c5",
+                        "inverse-surface": "#e5e2e1",
+                        "surface": "#131313",
+                        "surface-container-lowest": "#0e0e0e",
+                        "on-tertiary": "#363022",
+                        "on-tertiary-container": "#413a2c",
+                        "secondary-fixed": "#e4e2e1",
+                        "on-error-container": "#ffdad6",
+                        "tertiary-fixed-dim": "#d1c5b2",
+                        "on-surface-variant": "#d1c5b4",
+                        "primary-fixed-dim": "#e9c176",
+                        "on-error": "#690005",
+                        "background": "#131313"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #131313;
+            color: #e5e2e1;
+            font-family: 'Manrope', sans-serif;
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#1c1b1b]/80 backdrop-blur-[20px] shadow-2xl shadow-black/40 flex justify-between items-center px-12 py-4">
+<div class="flex flex-col items-center">
+<div class="text-xl font-bold tracking-[0.2em] text-[#e9c176] font-display leading-tight">SAVORIA</div>
+<div class="text-[10px] tracking-[0.4em] text-[#e9c176] font-display uppercase -mt-1 opacity-90">ELEGANCE</div>
+</div>
+<div class="hidden md:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
+<a class="text-stone-400 font-display tracking-widest text-[10px] uppercase hover:text-[#e9c176] transition-all duration-300" href="#">Home</a>
+<a class="text-stone-400 font-display tracking-widest text-[10px] uppercase hover:text-[#e9c176] transition-all duration-300" href="#">Menu</a>
+<a class="text-stone-400 font-display tracking-widest text-[10px] uppercase hover:text-[#e9c176] transition-all duration-300" href="#">Private Dining</a>
+<a class="text-stone-400 font-display tracking-widest text-[10px] uppercase hover:text-[#e9c176] transition-all duration-300" href="#about">About</a>
+<a class="text-stone-400 font-display tracking-widest text-[10px] uppercase hover:text-[#e9c176] transition-all duration-300" href="#contact">Contact</a>
+</div>
+<button class="border border-[#e9c176]/50 text-[#e9c176] font-display text-[10px] font-medium uppercase tracking-[0.2em] px-8 py-2.5 rounded-sm hover:bg-[#e9c176] hover:text-[#1c1b1b] transition-all duration-300 active:scale-95">
+            Reservations
+        </button>
+</nav>
+<main>
+<!-- Sensory Hero Section -->
+<section class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Exquisitely plated fine dining dish" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABnRWJ-OGU_pYeDADadVOBFJ8XJXvnvxICrAYMyt44iv5cMYEdlWeBHIIqmZpxFIy_f-zU0sb560ns7pRuLCEBarupkoMiwnTfPU97wLdhWTfPZvPYPw8vL6v4gknbeiCpoiC04mw6w_blZ4hfGDDzX84FwgeqMqcIduuBfJm0MTnzYkn3rGnwcMS0pWMVySvILEf_glQiNTk_Dj8PthHczqOScZ7g0JSrih4PwVL2WhWtmVldRuhQdX-KYhxhX5qXTrfgIx3Z9_E_"/>
+<div class="absolute inset-0 bg-black/60"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dim via-transparent to-transparent"></div>
+</div>
+<div class="relative z-10 container mx-auto px-8 text-center flex flex-col items-center gap-8">
+<div class="max-w-4xl space-y-6">
+<h1 class="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[1.1]">
+                        Savoria Elegance:<br/>
+<span class="text-primary">A Modern Fine-Dining Experience.</span>
+</h1>
+<p class="text-on-surface-variant max-w-2xl mx-auto text-lg md:text-xl font-light tracking-wide opacity-80">
+                        Where Culinary Artistry Meets Unforgettable Moments.
+                    </p>
+</div>
+<div class="mt-4">
+<button class="bg-[#c5a059] text-[#1c1b1b] font-label text-xs font-bold uppercase tracking-[0.2em] px-12 py-5 rounded-sm hover:bg-primary transition-colors duration-300 active:scale-95 shadow-2xl shadow-black/50">
+                        Reservations: Make Your Booking
+                    </button>
+</div>
+</div>
+</section>
+<!-- Bento Grid Content Section -->
+<section class="bg-surface py-32 px-8">
+<div class="container mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-2xl">
+<span class="label-md text-tertiary uppercase tracking-[0.3em] font-medium block mb-4">Discover the Essence</span>
+<h2 class="text-4xl md:text-6xl font-bold tracking-tight">The Art of the Experience</h2>
+</div>
+<p class="text-on-surface-variant max-w-xs text-sm uppercase tracking-widest leading-loose">
+                        Where tradition meets avant-garde technique in every meticulous detail.
+                    </p>
+</div>
+<!-- Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 auto-rows-[300px]">
+<!-- Large Feature: Chef's Tasting Menu -->
+<div class="md:col-span-8 md:row-span-2 group relative overflow-hidden rounded-xl bg-surface-container-high transition-all duration-500 hover:shadow-2xl hover:shadow-black/60">
+<img alt="Artistic multi-course tasting menu" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNEl7HjgI9v01-AVvV85QlL7ZtFAtMwZyz7-eYgkKFyYFudJ0H87PXRYmcX1gVhA6JU1iBH-_QWjQm1IRKOnsJo7FHsnVQoGRdvF9HViZucZwdiH0s5hkkJp9Vh9mONow80a4Qof92j10hWRg0JNAKEz9GcdItPbtS1leffoS0Son5KhO5JSwxDk4v_rPBCiXth2LkRfKK_hlr5lj5itvGZ5x03N0c5uVMWXx3LNhBuLhOBq1fKGpoO7ITE0MEgqZoemFPmLRDuf_R"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-12 w-full">
+<h3 class="text-4xl font-bold mb-4">Chef's Tasting Menu</h3>
+<p class="text-on-surface-variant max-w-md mb-8 leading-relaxed">
+                                An eleven-course sensory journey exploring the heritage of local terroir through modern global perspectives.
+                            </p>
+<a class="inline-flex items-center gap-3 text-primary uppercase text-xs font-bold tracking-widest border-b border-primary/30 pb-2 hover:border-primary transition-all" href="#">
+                                Explore the Menu
+                                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Private Dining -->
+<div class="md:col-span-4 md:row-span-1 group relative overflow-hidden rounded-xl bg-surface-container-low transition-all duration-500">
+<div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1544145945-f904253d0c7b?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80')] bg-cover bg-center opacity-40 group-hover:scale-110 transition-transform duration-700"></div>
+<div class="relative h-full flex flex-col justify-end p-8 z-10">
+<h3 class="text-2xl font-bold mb-2">Private Dining</h3>
+<p class="text-on-surface-variant text-sm mb-4">Intimate spaces for your most significant celebrations.</p>
+<span class="material-symbols-outlined text-primary">meeting_room</span>
+</div>
+</div>
+<!-- Meet the Chef -->
+<div class="md:col-span-4 md:row-span-1 group relative overflow-hidden rounded-xl bg-surface-container-highest transition-all duration-500">
+<div class="p-8 h-full flex flex-col justify-between">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-4xl text-primary" style="font-variation-settings: 'FILL' 1;">restaurant_menu</span>
+<span class="text-[10px] uppercase tracking-widest text-outline">Featured Profile</span>
+</div>
+<div>
+<h3 class="text-2xl font-bold mb-2">Meet the Chef</h3>
+<p class="text-on-surface-variant text-sm">Discover the vision of Executive Chef Julian Vane, redefining luxury dining.</p>
+</div>
+</div>
+</div>
+<!-- Signature Wine -->
+<div class="md:col-span-4 md:row-span-1 group relative overflow-hidden rounded-xl bg-surface-container-lowest transition-all duration-500">
+<div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80')] bg-cover bg-center opacity-30 group-hover:scale-110 transition-transform duration-700"></div>
+<div class="relative h-full flex flex-col justify-center items-center p-8 z-10 text-center">
+<h3 class="text-xl font-bold uppercase tracking-widest text-primary">Wine Cellar</h3>
+<div class="w-12 h-[1px] bg-outline-variant my-4"></div>
+<p class="text-on-surface-variant text-xs uppercase tracking-tighter">Rare Vintages &amp; Global Finds</p>
+</div>
+</div>
+<!-- Reservation Preview -->
+<div class="md:col-span-8 md:row-span-1 group relative overflow-hidden rounded-xl bg-surface-container transition-all duration-500 p-12 flex flex-col md:flex-row items-center gap-12">
+<div class="flex-1">
+<h3 class="text-2xl font-bold mb-4">Reserve Your Evening</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                                Located in the heart of the historic district, Savoria Elegance offers an escape from the ordinary. Bookings are available up to three months in advance.
+                            </p>
+<div class="flex gap-6">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">location_on</span>
+<span class="text-xs uppercase tracking-widest">Mayfair, London</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">schedule</span>
+<span class="text-xs uppercase tracking-widest">18:00 — 23:00</span>
+</div>
+</div>
+</div>
+<div class="w-full md:w-48 h-full bg-surface-container-lowest rounded-lg overflow-hidden relative grayscale hover:grayscale-0 transition-all duration-500">
+<div class="absolute inset-0 bg-primary/10"></div>
+<div class="w-full h-full flex items-center justify-center">
+<span class="material-symbols-outlined text-5xl text-outline-variant">map</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="bg-surface-container-lowest py-32 px-8" id="about">
+<div class="container mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div class="relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl">
+<img alt="Restaurant Interior" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCR4liu1rRNK9gkG9qu1k6p88QXGuYaF2Wvo869Eh7FFLMd0wxYWeEEfItAEvlsltGhMBUz8ona50kf670qIuaMhzMZp5MfDGhb3at_CRfHwZxJ8aKuJe7FRhqbYm_PdeLgFzLnNVhWLxg0nJFfT8n6emn6Luov8qZNpbxPEt3tOI5mWBh_JXEHqTkRtXMF57WaWEGJsfz3HJPHUGeWX9hYyEsJgrgjCgtMjCYLuMstE6dVfiZtIMwcepWchGE4HvrE0myG-DBojG6E"/>
+</div>
+<div class="absolute -bottom-10 -right-10 w-2/3 aspect-square rounded-xl overflow-hidden border-8 border-surface-container-lowest shadow-2xl hidden md:block">
+<img alt="Plating Detail" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7uRt15RbCNNWLi2P8WuoFM0_llISE9QAMAgF3xm190DJf52Vm5HostbJtWEKzamlffiUl75bColm74-ucsdhRR-aYj3W5fJfzzyRGRSPdSAR1oZ-8aob1YUwHYClsBr0ne4YSvMwRyndMG445ReBddr4PEKXwSUitgW4pQyME_Ln81k_lmmWM1-ieoWi3SPtLdzJmngQ_udxjmLXAkef238AQ_C3Z8XVz3SD5NYylqZAMpuGQAsgYl6z_goJ9WT7XF6n33nTtT9Ik"/>
+</div>
+</div>
+<div class="space-y-8">
+<div>
+<span class="label-md text-primary uppercase tracking-[0.3em] font-medium block mb-4">Our Heritage</span>
+<h2 class="text-4xl md:text-6xl font-bold tracking-tight mb-6">Philosophy &amp; History</h2>
+</div>
+<p class="text-on-surface-variant text-lg leading-relaxed font-light">
+                            Born from a desire to reconnect fine dining with the raw beauty of seasonal harvests, Savoria Elegance was established in 2012 in a restored heritage site in Mayfair. Our philosophy is rooted in "Sensory Minimalism"—the belief that the finest ingredients should speak for themselves, amplified by modern technique but never masked.
+                        </p>
+<p class="text-on-surface-variant text-lg leading-relaxed font-light">
+                            Every dish tells a story of terroir and time. We work directly with artisan farmers and foragers to bring the soul of the land to your table, creating an atmosphere where every detail—from the weight of the silver to the whisper of the acoustic ambiance—is curated for elegance.
+                        </p>
+<div class="grid grid-cols-2 gap-8 pt-8 border-t border-outline-variant/30">
+<div>
+<div class="text-3xl font-bold text-primary mb-1">12+</div>
+<div class="text-[10px] uppercase tracking-widest text-outline">Years of Excellence</div>
+</div>
+<div>
+<div class="text-3xl font-bold text-primary mb-1">3</div>
+<div class="text-[10px] uppercase tracking-widest text-outline">Michelin Stars</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="bg-surface py-32 px-8 border-t border-outline-variant/10" id="contact">
+<div class="container mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+<div class="lg:col-span-5 space-y-12">
+<div>
+<span class="label-md text-tertiary uppercase tracking-[0.3em] font-medium block mb-4">Get in Touch</span>
+<h2 class="text-4xl md:text-6xl font-bold tracking-tight">Connect With Us</h2>
+</div>
+<div class="space-y-8">
+<div class="flex items-start gap-6 group">
+<div class="w-12 h-12 rounded-full border border-primary/20 flex items-center justify-center group-hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined text-primary">location_on</span>
+</div>
+<div>
+<h4 class="text-xs uppercase tracking-widest text-outline mb-2">Location</h4>
+<p class="text-lg">15 Bruton Lane, Mayfair<br/>London, W1J 6JD</p>
+</div>
+</div>
+<div class="flex items-start gap-6 group">
+<div class="w-12 h-12 rounded-full border border-primary/20 flex items-center justify-center group-hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined text-primary">call</span>
+</div>
+<div>
+<h4 class="text-xs uppercase tracking-widest text-outline mb-2">Reservations</h4>
+<p class="text-lg">+44 20 7123 4567</p>
+</div>
+</div>
+<div class="flex items-start gap-6 group">
+<div class="w-12 h-12 rounded-full border border-primary/20 flex items-center justify-center group-hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined text-primary">mail</span>
+</div>
+<div>
+<h4 class="text-xs uppercase tracking-widest text-outline mb-2">Email</h4>
+<p class="text-lg">concierge@savoria-elegance.com</p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7 bg-surface-container-low p-8 md:p-12 rounded-2xl">
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-[10px] uppercase tracking-widest text-outline ml-1">Full Name</label>
+<input class="w-full bg-surface-container-high border-none rounded-sm px-4 py-3 text-sm focus:ring-1 focus:ring-primary/50 placeholder:text-stone-600 transition-all" placeholder="John Doe" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-[10px] uppercase tracking-widest text-outline ml-1">Email Address</label>
+<input class="w-full bg-surface-container-high border-none rounded-sm px-4 py-3 text-sm focus:ring-1 focus:ring-primary/50 placeholder:text-stone-600 transition-all" placeholder="john@example.com" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-[10px] uppercase tracking-widest text-outline ml-1">Subject</label>
+<select class="w-full bg-surface-container-high border-none rounded-sm px-4 py-3 text-sm focus:ring-1 focus:ring-primary/50 text-stone-400">
+<option>Inquiry Type</option>
+<option>Private Events</option>
+<option>Dietary Requirements</option>
+<option>Feedback</option>
+<option>Media Inquiry</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-[10px] uppercase tracking-widest text-outline ml-1">Message</label>
+<textarea class="w-full bg-surface-container-high border-none rounded-sm px-4 py-3 text-sm focus:ring-1 focus:ring-primary/50 placeholder:text-stone-600 transition-all" placeholder="How can we assist you?" rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary font-label text-xs font-bold uppercase tracking-[0.2em] py-4 rounded-sm hover:brightness-110 transition-all active:scale-[0.98]" type="submit">
+                                Send Message
+                            </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#0e0e0e] w-full py-16 flex flex-col items-center justify-center gap-12 px-8 text-center">
+<div class="flex flex-col items-center">
+<div class="text-xl font-bold tracking-[0.2em] text-[#e9c176] font-display leading-tight">SAVORIA</div>
+<div class="text-[10px] tracking-[0.4em] text-[#e9c176] font-display uppercase -mt-1 opacity-90">ELEGANCE</div>
+</div>
+<div class="flex flex-wrap justify-center gap-10">
+<a class="text-stone-600 font-['Manrope'] text-xs tracking-widest uppercase hover:text-stone-300 transition-colors" href="#">Privacy</a>
+<a class="text-stone-600 font-['Manrope'] text-xs tracking-widest uppercase hover:text-stone-300 transition-colors" href="#">Careers</a>
+<a class="text-stone-600 font-['Manrope'] text-xs tracking-widest uppercase hover:text-stone-300 transition-colors" href="#">Press</a>
+<a class="text-stone-600 font-['Manrope'] text-xs tracking-widest uppercase hover:text-stone-300 transition-colors" href="#contact">Contact</a>
+</div>
+<div class="text-[#e9c176]/60 font-['Manrope'] text-[10px] tracking-[0.3em] uppercase">
+            © 2024 Savoria Elegance. A Masterpiece of Taste.
+        </div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-stone-600 hover:text-primary cursor-pointer transition-colors">share_reviews</span>
+<span class="material-symbols-outlined text-stone-600 hover:text-primary cursor-pointer transition-colors">local_bar</span>
+<span class="material-symbols-outlined text-stone-600 hover:text-primary cursor-pointer transition-colors">camera_enhance</span>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface": "#131313",
+                        "on-tertiary-fixed-variant": "#4d4637",
+                        "on-tertiary-fixed": "#211b0f",
+                        "surface-container-high": "#2a2a2a",
+                        "on-surface-variant": "#d1c5b4",
+                        "on-secondary-container": "#b6b5b4",
+                        "on-surface": "#e5e2e1",
+                        "error-container": "#93000a",
+                        "on-background": "#e5e2e1",
+                        "primary-fixed": "#ffdea5",
+                        "surface-container-lowest": "#0e0e0e",
+                        "on-secondary-fixed": "#1b1c1c",
+                        "inverse-surface": "#e5e2e1",
+                        "tertiary": "#d1c5b2",
+                        "background": "#131313",
+                        "tertiary-container": "#afa492",
+                        "surface-variant": "#353534",
+                        "on-primary-fixed-variant": "#5d4201",
+                        "on-primary-container": "#4e3700",
+                        "inverse-on-surface": "#313030",
+                        "surface-container-low": "#1c1b1b",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "tertiary-fixed": "#ede1cd",
+                        "surface-dim": "#131313",
+                        "outline": "#9a8f80",
+                        "surface-tint": "#e9c176",
+                        "on-tertiary": "#363022",
+                        "surface-container": "#201f1f",
+                        "primary": "#e9c176",
+                        "on-tertiary-container": "#413a2c",
+                        "secondary-fixed": "#e4e2e1",
+                        "on-secondary-fixed-variant": "#474747",
+                        "on-error-container": "#ffdad6",
+                        "on-error": "#690005",
+                        "surface-bright": "#393939",
+                        "primary-container": "#c5a059",
+                        "surface-container-highest": "#353534",
+                        "secondary-container": "#474747",
+                        "on-secondary": "#303030",
+                        "on-primary-fixed": "#261900",
+                        "inverse-primary": "#775a19",
+                        "error": "#ffb4ab",
+                        "secondary": "#c8c6c5",
+                        "tertiary-fixed-dim": "#d1c5b2",
+                        "primary-fixed-dim": "#e9c176",
+                        "outline-variant": "#4e4639",
+                        "on-primary": "#412d00"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            text-shadow: 0 4px 12px rgba(0,0,0,0.5);
+        }
+        .bg-gold-gradient {
+            background: linear-gradient(135deg, #e9c176 0%, #c5a059 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary/30">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#131313]/80 backdrop-blur-md flex justify-between items-center px-12 py-6 max-w-full mx-auto">
+<div class="text-2xl font-bold tracking-tighter text-[#e9c176] font-manrope">Savoria Elegance</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-[#9a8f80] font-manrope tracking-tight leading-relaxed hover:text-[#e9c176] transition-colors duration-300" href="#">Home</a>
+<a class="text-[#e9c176] border-b border-[#e9c176] pb-1 font-manrope tracking-tight leading-relaxed hover:text-[#e9c176] transition-colors duration-300" href="#">Menu</a>
+<a class="text-[#9a8f80] font-manrope tracking-tight leading-relaxed hover:text-[#e9c176] transition-colors duration-300" href="#">Private Dining</a>
+<a class="text-[#9a8f80] font-manrope tracking-tight leading-relaxed hover:text-[#e9c176] transition-colors duration-300" href="#">Reservations</a>
+<a class="text-[#9a8f80] font-manrope tracking-tight leading-relaxed hover:text-[#e9c176] transition-colors duration-300" href="#">About</a>
+</div>
+<button class="bg-gold-gradient text-on-primary px-8 py-3 rounded-lg font-bold text-sm tracking-widest uppercase hover:scale-95 transition-transform duration-300">
+            Book a Table
+        </button>
+</nav>
+<!-- Hero Section -->
+<header class="relative min-h-[614px] flex items-center justify-center pt-24 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-b from-surface/20 via-surface/60 to-surface z-10"></div>
+<img class="w-full h-full object-cover" data-alt="atmospheric fine dining restaurant interior with dim lighting, velvet chairs, and soft candlelight reflecting on dark wood tables" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQ2S3w0DExLSUUXz9f5c0TuPQl7Ry1v0cb3OnGplQmUf5eykgodQdE3x3t5Z7VqBYPQKIvn9pcvFX5hIm84LffeNeLlvZpBrvsDLWxmaOXmMBtrB4PbLxFb4ktcFkL8GbrOZwWFnxTSRDoNySSi5-6k7n5KgDGvM_W0hQOsZSQSh069WA1NxS0cGkNzveXkX25Kvh0dmqs1qSUj_0RovItJ1KF0pHsWDqjBeCA5uAm5XU5RUV_gnFew-D69Go79XjwJEytOC2DRduN"/>
+</div>
+<div class="relative z-20 text-center px-6">
+<span class="text-on-tertiary font-label text-sm tracking-[0.3em] uppercase block mb-4">Epicurean Journey</span>
+<h1 class="text-6xl md:text-8xl font-bold font-headline tracking-tighter leading-none editorial-shadow">Le Menu d'Artiste</h1>
+<p class="mt-6 text-on-surface-variant max-w-2xl mx-auto font-light text-lg leading-relaxed">A curation of seasonal excellence, where traditional techniques meet contemporary imagination.</p>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-6 py-24 space-y-32">
+<!-- Chef's Tasting Menu (Signature Component) -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-5 space-y-8">
+<div class="space-y-2">
+<span class="text-primary font-label text-sm tracking-widest uppercase">The Experience</span>
+<h2 class="text-5xl font-bold font-headline tracking-tight text-on-surface">Chef's Tasting Menu</h2>
+</div>
+<p class="text-on-surface-variant leading-relaxed text-lg">An eight-course odyssey through the terroir, guided by Executive Chef Marcel Laurent. Each dish is a testament to the pursuit of culinary perfection.</p>
+<div class="space-y-6 pt-4">
+<div class="flex justify-between items-end border-b border-outline-variant/20 pb-4">
+<div>
+<h4 class="text-xl font-bold text-on-surface">Grand Tasting</h4>
+<p class="text-sm text-on-surface-variant italic">Wine pairing available upon request</p>
+</div>
+<span class="text-primary font-bold text-xl">$285</span>
+</div>
+</div>
+<button class="flex items-center gap-3 text-primary group">
+<span class="font-label tracking-widest uppercase text-sm border-b border-primary/40 group-hover:border-primary transition-all pb-1">View Full Journey</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<div class="md:col-span-7 relative h-[600px] rounded-xl overflow-hidden group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="close-up of a meticulously plated fine dining dish with tweezers placing a small flower, dark background, golden lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEBiWVdFyOifR5uwsZ6_9hB4bxEI35khZqCVSc57dssFISo40b2k0mjzPZT0p9sNqgRKQX2Et-K-GyDdXU8ODCy3oggh35vfP8dpNv3MMX_exsMWVdCJuBKtAs61I1DUP9nQMrjHYrnyM2aA0bPSxC1nKuvcTIYiecTHhBYkKzUMVRslh8oL109RM5n3W6LSHQtasOTnJGWyYq5vKiYlbjOfUsmI3hWaVgVwG4cvSdysQ9yhAPN1zuNdo2d6CteD7CU6JOLz-5mMQQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 to-transparent"></div>
+<div class="absolute bottom-8 left-8 right-8 flex justify-between items-end">
+<div class="text-on-surface">
+<p class="text-sm opacity-70 mb-1 italic">Course IV</p>
+<h3 class="text-2xl font-bold">Butter-Poached Langoustine</h3>
+</div>
+</div>
+</div>
+</section>
+<!-- Appetizers & Main Course Grid -->
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-24">
+<!-- Appetizers -->
+<div class="space-y-12">
+<div class="flex items-center gap-6">
+<h2 class="text-4xl font-bold font-headline tracking-tight whitespace-nowrap">Appetizers</h2>
+<div class="h-[1px] w-full bg-outline-variant/30"></div>
+</div>
+<div class="space-y-10">
+<div class="group cursor-default">
+<div class="flex justify-between items-baseline mb-2">
+<h3 class="text-xl font-bold group-hover:text-primary transition-colors">Wagyu Carpaccio</h3>
+<span class="text-on-surface-variant font-light">$42</span>
+</div>
+<p class="text-on-surface-variant leading-relaxed">A5 Kobe, truffle emulsion, caper berries, aged parmesan shards, and micro-arugula.</p>
+</div>
+<div class="group cursor-default">
+<div class="flex justify-between items-baseline mb-2">
+<h3 class="text-xl font-bold group-hover:text-primary transition-colors">Roasted Marrow Bone</h3>
+<span class="text-on-surface-variant font-light">$38</span>
+</div>
+<p class="text-on-surface-variant leading-relaxed">Herb crust, parsley shallot salad, grilled sourdough, and sea salt flakes.</p>
+</div>
+<div class="group cursor-default">
+<div class="flex justify-between items-baseline mb-2">
+<h3 class="text-xl font-bold group-hover:text-primary transition-colors">Golden Beet Tartare</h3>
+<span class="text-on-surface-variant font-light">$34</span>
+</div>
+<p class="text-on-surface-variant leading-relaxed">Avocado mousse, citrus segments, toasted pine nuts, and tarragon vinaigrette.</p>
+</div>
+<div class="group cursor-default">
+<div class="flex justify-between items-baseline mb-2">
+<h3 class="text-xl font-bold group-hover:text-primary transition-colors">Wild Mushroom Velouté</h3>
+<span class="text-on-surface-variant font-light">$36</span>
+</div>
+<p class="text-on-surface-variant leading-relaxed">Porcini dust, chive oil, and a delicate porcini foam with crispy leeks.</p>
+</div>
+</div>
+</div>
+<!-- Main Course -->
+<div class="space-y-12">
+<div class="flex items-center gap-6">
+<h2 class="text-4xl font-bold font-headline tracking-tight whitespace-nowrap">Main Course</h2>
+<div class="h-[1px] w-full bg-outline-variant/30"></div>
+</div>
+<div class="space-y-10">
+<div class="group cursor-default">
+<div class="flex justify-between items-baseline mb-2">
+<h3 class="text-xl font-bold group-hover:text-primary transition-colors">Dover Sole Meunière</h3>
+<span class="text-on-surface-variant font-light">$85</span>
+</div>
+<p class="text-on-surface-variant leading-relaxed">Tableside deboned, brown butter, lemon, capers, and seasonal baby vegetables.</p>
+</div>
+<div class="group cursor-default">
+<div class="flex justify-between items-baseline mb-2">
+<h3 class="text-xl font-bold group-hover:text-primary transition-colors">Herb-Crusted Lamb Rack</h3>
+<span class="text-on-surface-variant font-light">$78</span>
+</div>
+<p class="text-on-surface-variant leading-relaxed">Mint pea purée, roasted heritage carrots, and a rich red wine reduction.</p>
+</div>
+<div class="group cursor-default">
+<div class="flex justify-between items-baseline mb-2">
+<h3 class="text-xl font-bold group-hover:text-primary transition-colors">Truffle Risotto</h3>
+<span class="text-on-surface-variant font-light">$62</span>
+</div>
+<p class="text-on-surface-variant leading-relaxed">Acquerello rice, seasonal black truffles, 36-month aged Parmigiano-Reggiano.</p>
+</div>
+<div class="group cursor-default">
+<div class="flex justify-between items-baseline mb-2">
+<h3 class="text-xl font-bold group-hover:text-primary transition-colors">Dry-Aged Ribeye</h3>
+<span class="text-on-surface-variant font-light">$95</span>
+</div>
+<p class="text-on-surface-variant leading-relaxed">45-day aged, bone marrow butter, garlic confit, and smoked fleur de sel.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Signature Imagery Asymmetric Layout -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="md:col-span-1 h-[400px] rounded-xl overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover" data-alt="perfectly seared steak with herbs and garlic, sliced to show medium-rare center, on a dark plate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZWc3xVfJSln9PzrLLfHCcBTq57EHQhdmgKbZyM8FnbmtUqyl_DwQWWrIG1uax13uSMxbsZ_KVHF4s9eRNDuyojvkTWBATloFloRwaaqGeAZ1yd-8ilbqKUXUFJVeSwPSBc8wv7WZofSgJ7_ttUs6YRyR915ykFhfz3az18WlbgcrzDizWJyPfBgZSoWrprDX25cZEJMzUqXUvY51IEF4VW3tlyE28Y16t2Rea8wVmVlELQ4uP9KS3unl8KnjutYgrwV8DSnHaCoqL"/>
+</div>
+<div class="md:col-span-1 h-[500px] md:-mt-12 rounded-xl overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover" data-alt="artistic overhead shot of several colorful fine dining dishes arranged on a dark surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhFT1CvkgKVjWUUWsdR4yBy_Mv0SJhniZy8imeUQ_dKInbsaz-O3fueL8B4eKB1RXG-ecZeVDXjtSNat6PN_tzKaurREt0A43lLJoGYwymtGRTSsh-gBa4h-xHMTN_aIN3GY7r-XCz2zrial1-eu1M2J6E2SU7oiIVwLGjxLsLbK9aY7RcGPlkvA0WjbaY1btVWHzqvdTU1ph-ftCbSmLLxTH_QDxffPSnKdSy8ZUAOqp7_dtIWpJ3NDDCF7-PX4hPd_nYA1lRp_Y5"/>
+</div>
+<div class="md:col-span-1 h-[400px] rounded-xl overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover" data-alt="dramatic close-up of a cocktail being poured with a citrus twist, sparks of orange peel oil in the air" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbtDGGerCxt2edF3zDxdjdNdLFEWwOxgyGVDCtzodiI0m8985506bgmBsDEHyTISdBUxlzHAvpVs5hIE2j8G9kEfnHjCA5ZCUx_yKNdKZL86HQ-RUTyRzKNBiiXjwQ22a9n3_fA_LeuJgW49VIbd2Qbq-eF8K1aiiAZIqfiGQ-Empv8n6IlqLpkLHl_ixmYwn68t1-Ib1B13i_gEdDRyQKkjF7UW41fuK_bH8i-mLHQHONQHYU924eGyrsemO4boJN3VN6locXB5_B"/>
+</div>
+</section>
+<!-- Desserts -->
+<section class="py-12 bg-surface-container-low rounded-3xl px-12">
+<div class="max-w-4xl mx-auto">
+<div class="text-center mb-16">
+<span class="text-primary font-label text-sm tracking-widest uppercase">The Sweet Finale</span>
+<h2 class="text-5xl font-bold font-headline mt-4">Desserts</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-12">
+<div class="flex flex-col gap-2">
+<div class="flex justify-between items-baseline">
+<h3 class="text-xl font-bold">Valrhona Soufflé</h3>
+<span class="text-primary">$26</span>
+</div>
+<p class="text-on-surface-variant font-light italic">Dark chocolate, Madagascar vanilla bean crème anglaise.</p>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex justify-between items-baseline">
+<h3 class="text-xl font-bold">Deconstructed Lemon Tart</h3>
+<span class="text-primary">$22</span>
+</div>
+<p class="text-on-surface-variant font-light italic">Meyer lemon curd, basil crystals, toasted meringue shards.</p>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex justify-between items-baseline">
+<h3 class="text-xl font-bold">Lavender Crème Brûlée</h3>
+<span class="text-primary">$24</span>
+</div>
+<p class="text-on-surface-variant font-light italic">Honey lavender custard, burnt sugar crust, fresh berries.</p>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex justify-between items-baseline">
+<h3 class="text-xl font-bold">Artisanal Cheese Board</h3>
+<span class="text-primary">$32</span>
+</div>
+<p class="text-on-surface-variant font-light italic">Selection of three regional cheeses, honeycomb, fig jam.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 px-12 bg-[#0e0e0e] border-t border-outline-variant/10">
+<div class="flex flex-col md:flex-row justify-between items-start gap-8 w-full max-w-7xl mx-auto">
+<div class="space-y-6">
+<div class="text-xl font-bold text-[#e9c176] font-manrope">Savoria Elegance</div>
+<p class="text-[#9a8f80] max-w-xs font-manrope text-sm leading-relaxed">Dedicated to the art of the table and the celebration of life's finest moments since 1992.</p>
+</div>
+<div class="grid grid-cols-2 gap-16">
+<div class="space-y-4">
+<h5 class="text-on-surface text-sm font-bold uppercase tracking-widest">Connect</h5>
+<ul class="space-y-2">
+<li><a class="text-[#9a8f80] hover:text-[#e9c176] transition-colors text-sm" href="#">Instagram</a></li>
+<li><a class="text-[#9a8f80] hover:text-[#e9c176] transition-colors text-sm" href="#">Facebook</a></li>
+<li><a class="text-[#9a8f80] hover:text-[#e9c176] transition-colors text-sm" href="#">LinkedIn</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h5 class="text-on-surface text-sm font-bold uppercase tracking-widest">Visit</h5>
+<ul class="space-y-2">
+<li><a class="text-[#9a8f80] hover:text-[#e9c176] transition-colors text-sm" href="#">Contact Us</a></li>
+<li class="text-[#9a8f80] text-sm">122 Rue de la Paix</li>
+<li class="text-[#9a8f80] text-sm">Paris, FR 75001</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="mt-16 pt-8 border-t border-outline-variant/10 flex flex-col md:flex-row justify-between items-center w-full max-w-7xl mx-auto">
+<p class="text-[#9a8f80] text-xs font-manrope">© 2024 Savoria Elegance. All rights reserved.</p>
+<div class="flex gap-6 mt-4 md:mt-0">
+<a class="text-[#9a8f80] text-xs hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="text-[#9a8f80] text-xs hover:text-primary transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</body></html>
