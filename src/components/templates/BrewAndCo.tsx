@@ -140,13 +140,13 @@ export default function BrewAndCo() {
                </motion.div>
 
                <motion.h1 
-                 initial={{ opacity: 0, y: 30 }}
-                 animate={{ opacity: 1, y: 0 }}
-                 transition={{ duration: 0.8 }}
-                 className="text-6xl md:text-8xl xl:text-9xl font-serif text-[#FCFCFC] font-black italic first-letter:not-italic leading-[0.9] tracking-tighter"
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8 }}
+                  className="text-5xl sm:text-6xl md:text-8xl xl:text-9xl font-serif text-[#FCFCFC] font-black italic first-letter:not-italic leading-[0.9] tracking-tighter"
                >
-                 Brew & Co.<br />
-                 <span className="text-[#D35400] not-italic font-sans text-4xl md:text-6xl tracking-widest uppercase block mt-4 font-black">Roasters</span>
+                  Brew & Co.<br />
+                  <span className="text-[#D35400] not-italic font-sans text-3xl sm:text-4xl md:text-6xl tracking-widest uppercase block mt-4 font-black">Roasters</span>
                </motion.h1>
 
                <motion.p 
@@ -164,9 +164,9 @@ export default function BrewAndCo() {
                  transition={{ delay: 0.6 }}
                  className="pt-6"
                >
-                 <button className="bg-[#D35400] px-12 py-5 rounded-full text-xs font-black uppercase tracking-[0.2em] hover:scale-105 transition-transform flex items-center gap-4 shadow-2xl shadow-accent/20">
-                   Explore Our Menu <ArrowRight size={20} />
-                 </button>
+                 <button className="bg-[#D35400] px-8 sm:px-12 py-4 sm:py-5 rounded-full text-xs font-black uppercase tracking-[0.2em] hover:scale-105 transition-transform flex items-center gap-3 sm:gap-4 shadow-2xl shadow-accent/20">
+                    Explore Our Menu <ArrowRight size={18} />
+                  </button>
                </motion.div>
             </div>
             
@@ -198,7 +198,7 @@ export default function BrewAndCo() {
                </button>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                {BENTO_CARDS.map((card, i) => (
                   <motion.div 
                     key={card.title}

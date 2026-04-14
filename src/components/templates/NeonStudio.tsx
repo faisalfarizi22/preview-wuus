@@ -140,7 +140,7 @@ export default function NeonStudio() {
                  Open for new bold ideas
               </div>
               
-              <h1 className="text-7xl md:text-9xl font-black leading-[0.85] tracking-tighter text-white">
+              <h1 className="text-5xl sm:text-7xl md:text-9xl font-black leading-[0.85] tracking-tighter text-white">
                 LET'S BUILD<br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF007A] via-[#00D1FF] to-[#39FF14]">BOLD IDEAS.</span>
               </h1>
@@ -185,7 +185,7 @@ export default function NeonStudio() {
               </div>
            </div>
 
-           <div className="grid grid-cols-2 gap-8 h-auto">
+           <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-6 md:gap-8 md:h-[700px]">
               {PROJECTS.map((project, i) => (
                 <motion.div 
                   key={project.title}
@@ -193,7 +193,7 @@ export default function NeonStudio() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.1 }}
-                  className={project.size}
+                  className={`${i === 0 ? 'md:row-span-2' : ''} min-h-[280px] sm:min-h-[320px]`}
                 >
                   <ProjectCard project={project} />
                 </motion.div>
@@ -222,9 +222,9 @@ export default function NeonStudio() {
 
         {/* CTA */}
         <section className="py-40 px-6 text-center">
-           <h3 className="text-5xl md:text-9xl font-black tracking-tighter mb-12 mix-blend-difference">READY TO FLIP THE<br /><span className="text-[#00D1FF]">SWITCH?</span></h3>
-           <button className="group text-4xl md:text-6xl font-black italic flex items-center gap-6 mx-auto hover:text-[#FF007A] transition-colors">
-              START A PROJECT <ArrowUpRight size={60} className="group-hover:translate-x-2 group-hover:-translate-y-2 transition-transform" />
+           <h3 className="text-4xl sm:text-5xl md:text-9xl font-black tracking-tighter mb-8 sm:mb-12 mix-blend-difference">READY TO FLIP THE<br /><span className="text-[#00D1FF]">SWITCH?</span></h3>
+           <button className="group text-2xl sm:text-4xl md:text-6xl font-black italic flex items-center gap-4 sm:gap-6 mx-auto hover:text-[#FF007A] transition-colors">
+              START A PROJECT <ArrowUpRight size={40} className="group-hover:translate-x-2 group-hover:-translate-y-2 transition-transform" />
            </button>
         </section>
       </main>
