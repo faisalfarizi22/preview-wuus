@@ -26,9 +26,35 @@ const DentalCare = dynamic(() => import("@/components/templates/DentalCare"), {
   loading: () => <div className="animate-pulse bg-gray-100 w-full h-full rounded-2xl" /> 
 });
 
+// New Templates
+const DressyRent = dynamic(() => import("@/components/templates/DressyRent"), { 
+  loading: () => <div className="animate-pulse bg-gray-100 w-full h-full rounded-2xl" /> 
+});
+const ArshakaRent = dynamic(() => import("@/components/templates/ArshakaRent"), { 
+  loading: () => <div className="animate-pulse bg-gray-100 w-full h-full rounded-2xl" /> 
+});
+const EmanLogistik = dynamic(() => import("@/components/templates/EmanLogistik"), { 
+  loading: () => <div className="animate-pulse bg-gray-100 w-full h-full rounded-2xl" /> 
+});
+const TahuGoreng = dynamic(() => import("@/components/templates/TahuGoreng"), { 
+  loading: () => <div className="animate-pulse bg-gray-100 w-full h-full rounded-2xl" /> 
+});
+const KainNusantara = dynamic(() => import("@/components/templates/KainNusantara"), { 
+  loading: () => <div className="animate-pulse bg-gray-100 w-full h-full rounded-2xl" /> 
+});
+const SocksIndonesia = dynamic(() => import("@/components/templates/SocksIndonesia"), { 
+  loading: () => <div className="animate-pulse bg-gray-100 w-full h-full rounded-2xl" /> 
+});
+
 const categories = ["Semua", "Kuliner", "Jasa Profesional", "Toko Online", "Kreatif & Agensi"];
 
 const templatesData = [
+  { id: "jas-3", category: "Jasa Profesional", name: "Dressy Rent", desc: "Digital experience kelas atas untuk persewaan gaun premium. Dilengkapi dengan katalog elegan dan sistem booking.", tag: "Rental Service", component: DressyRent, mockupImg: "/ChatGPT Image 23 Apr 2026, 23.08.16.png" },
+  { id: "jas-4", category: "Jasa Profesional", name: "Arshaka Rent", desc: "Layanan rental mobil terpercaya dengan sistem manajemen armada yang modern dan responsif.", tag: "Rental Service", component: ArshakaRent, mockupImg: "/6294254360631907341.jpg" },
+  { id: "jas-5", category: "Jasa Profesional", name: "Eman Logistik", desc: "Platform solusi logistik terintegrasi untuk bisnis, mencakup pengiriman laut, udara, dan darat.", tag: "Company Profile", component: EmanLogistik, mockupImg: "/ChatGPT Image 23 Apr 2026, 23.05.08.png" },
+  { id: "kul-3", category: "Kuliner", name: "Tahu Goreng", desc: "Landing page F&B yang menggugah selera dengan sistem pemesanan online yang praktis dan efisien.", tag: "Landing Page", component: TahuGoreng, mockupImg: "/ChatGPT Image 23 Apr 2026, 23.10.14.png" },
+  { id: "tok-2", category: "Toko Online", name: "Kain Nusantara", desc: "E-commerce tekstil tradisional multi-halaman dengan simulasi flow dari katalog hingga checkout.", tag: "Multi Page", component: KainNusantara, mockupImg: "/ChatGPT Image 23 Apr 2026, 23.14.02.png" },
+  { id: "tok-3", category: "Toko Online", name: "Socks Indonesia", desc: "Platform konveksi kaos kaki kustom dengan galeri desain yang kaya dan katalog produk lengkap.", tag: "Company Profile", component: SocksIndonesia, mockupImg: "/ChatGPT Image 24 Apr 2026, 14.57.51.png" },
   { id: "kul-1", category: "Kuliner", name: "Savoria Elegance", desc: "Digital experience kelas atas untuk restoran fine-dining. Multi-halaman dengan estetika 'The Shadowed Salon'.", tag: "Multi Page", component: SavoriaElegance, mockupImg: "/Savoria-mockup.png" },
   { id: "jas-1", category: "Jasa Profesional", name: "Trust Architect", desc: "Firma arsitektur B2B dengan fokus pada kepercayaan dan presisi. Layout multi-halaman yang kokoh dan profesional.", tag: "Multi Page", component: TrustArchitect, mockupImg: "/trust-mockup.png" },
   { id: "tok-1", category: "Toko Online", name: "Urban Threads", desc: "Katalog e-commerce gaya minimalis untuk fashion. Fokus pada estetika bersih dan koleksi berkelanjutan.", tag: "E-Commerce", component: UrbanThreads, mockupImg: "/urbanThreads-mockup.png" },
@@ -304,6 +330,7 @@ export default function ShowcasePage() {
                         src={selectedTemplate.mockupImg} 
                         alt={selectedTemplate.name} 
                         fill 
+                        sizes="(max-width: 768px) 100vw, 480px"
                         className="object-cover transition-transform duration-700 group-hover:scale-105"
                       />
                     ) : (

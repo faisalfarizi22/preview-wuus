@@ -9,6 +9,7 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://preview.webuntukusaha.com'),
   title: "Katalog Desain Web Premium | WUUS Preview",
   description: "Eksplorasi kumpulan desain web modern siap pakai untuk bisnis Anda oleh WebUntukUsaha.",
 };
